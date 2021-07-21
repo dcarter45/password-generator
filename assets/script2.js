@@ -37,10 +37,10 @@ function writePassword() {
     //alerts the user to input on every prompt
     while(!includeNumeric && !includeSpecialCharacter && !includeLowercase && !includeUppercase) {
         alert("check all")
-        includeNumeric = prompt("Should include numeric character").toLowerCase()
-        includeSpecialCharacter = prompt("Should include special character").toLowerCase()
-        includeLowercase = prompt("Should include lowercase character").toLowerCase()
-        includeUppercase = prompt("Should include uppercase character").toLowerCase()
+        includeNumeric = prompt("Should include numeric character, enter yes or no").toLowerCase()
+        includeSpecialCharacter = prompt("Should include special character,enter yes or no").toLowerCase()
+        includeLowercase = prompt("Should include lowercase character,enter yes or no").toLowerCase()
+        includeUppercase = prompt("Should include uppercase character,enter yes or no").toLowerCase()
     }
 
     //if user selects to include any of these characters by enering yes then we will put those characters into an array, if the users enter anything else then the program will do nothing and go to the next prompt
